@@ -1,6 +1,8 @@
-var x = document.getElementsByClassName("userContent");
+var posts = document.getElementsByClassName("userContentWrapper");
 
-for (var i = 0, length = x.length; i < length; i ++)
-{
-	console.log(x[i].parentElement)
+for(var i=0; i<posts.length; i++){  
+    if(posts[i].innerHTML.indexOf("Pokemon") != -1){ 
+       var parent = posts[i].parentNode; 
+       parent.parentNode.removeChild(parent)             
+     };
 }
