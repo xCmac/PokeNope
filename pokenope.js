@@ -1,5 +1,4 @@
 $("._5pcb").on('DOMNodeInserted', function() {
-	console.log("Inserted into _5pcb")
 	getRidOfPokemonPosts();
 });
 
