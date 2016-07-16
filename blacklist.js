@@ -1,4 +1,5 @@
 var blacklist = [
+	"Pokémon",
 	"Pokemon", 
 	"pokemon", 
 	"poke", 
