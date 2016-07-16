@@ -1,10 +1,18 @@
-var posts = document.getElementsByClassName("userContentWrapper");
+$("._5pcb").on('DOMNodeInserted', function() {
+	console.log("Inserted into _5pcb")
+	getRidOfPokemonPosts();
+});
 
-for(var i=0; i<blacklist.length; i++){
-	for (var j = 0; j < posts.length; j++) {
-		if(posts[j].innerHTML.indexOf(blacklist[i]) != -1){
-	       	var parent = posts[j].parentNode; 
-       		parent.parentNode.removeChild(parent)
+getRidOfPokemonPosts();
+
+function getRidOfPokemonPosts() {	
+	var posts = document.getElementsByClassName("userContentWrapper");
+	for(var i=0; i<blacklist.length; i++){
+		for (var j = 0; j < posts.length; j++) {
+			if(posts[j].innerHTML.indexOf(blacklist[i]) != -1){
+		       	var parent = posts[j].parentNode; 
+	       		parent.parentNode.removeChild(parent)
+			}
 		}
 	}
 }
