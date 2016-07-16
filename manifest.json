@@ -7,7 +7,7 @@
   "content_scripts": [
   {
     "matches": ["*://*.facebook.com/*"],
-    "js": ["pokenope.js"],
+    "js": ["blacklist.js", "pokenope.js"],
     "run_at": "document_end"
   }],
 
