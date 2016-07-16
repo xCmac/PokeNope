@@ -2,12 +2,12 @@
   "manifest_version": 2,
 
   "name": "PokeNope",
-  "description": "Removes Pokemon Go related stuff from your Facebook News Feed",
+  "description": "Removes Pokemon related stuff from your Facebook News Feed",
   "version": "1.0",
   "content_scripts": [
   {
     "matches": ["*://*.facebook.com/*"],
-    "js": ["jquery-3.1.0.slim.min.js", "blacklist.js", "pokenope.js"],
+    "js": ["jquery-3.1.0.min.js", "blacklist.js", "pokenope.js"],
     "run_at": "document_end"
   }],
 
